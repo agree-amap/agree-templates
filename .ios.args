@@ -1,0 +1,164 @@
+##示例：参数值优先级 命令行参数值>变量值>参数默认值
+#变量说明*(以*结尾表示必填) -arg defaultValue([空格]-命令行参数名[空格]参数默认值)
+#变量名=变量值
+
+#0 应用ID
+id=0000000000000000000000000000000a
+
+#1 应用名称
+name=test
+
+#2 版本号
+version=0.0.1
+
+#3 应用描述
+desc=我的描述
+
+#4 服务接口IP
+interfaceUrl=
+
+#5 http端口
+httpPort=
+
+#6 https端口
+httpsPort=
+
+#7 是否防截屏
+canSreenshot=true
+
+#8 是否打开应用完整性校验
+checkIntegrity=false
+
+#9 应用图标
+icon=D:/aiyiWork/luckwheel/lucky/lucky/src/assets/img/draw_btn.png
+
+#10 横竖屏设置
+screenType=unspecified
+
+#11 RSA证书路径
+rsaPath=
+
+#12 是否使用https证书
+useHttps=false
+
+#13 是否使用GZip压缩
+useGzip=false
+
+#14 client证书
+clientCert=
+
+#15 client证书密码
+clientCertPass=
+
+#16 QQ分享appID
+QQShareID=
+
+#17 微信分享appID
+WXShareID=
+
+#18 微博分享appKey
+WBShareKey=
+
+#19 主bundle文件
+mainBundle=
+
+#20 Bundle ID
+appid=
+
+#21 私钥密码
+password=
+
+#22 输出位置
+output=D:/AATest
+
+#23 打包类型(debug即调试基座)
+packageType=release
+
+#24 是否开启HTTPS双向认证
+doubleUseHttps=false
+
+#25 CA证书
+serverCert=
+
+#26 是否使用自签名证书
+selfSignature=false
+
+#27 服务接口路径
+agentUrl=
+
+#28 状态栏字体颜色
+statusBarFontColor=false
+
+#29 状态栏背景颜色
+statusBarBgColor=#fff
+
+#30 第三方地图KEY
+mapKey=
+
+#31 日志级别
+logMode=DEBUG
+
+#32 离线模式
+isOffline=false
+
+#33 基础包
+baseBundle=
+
+#34 字体是否随系统改变
+fontFollowSystem=false
+
+#35 禁用拆包模式
+isAllRN=true
+
+#36 子bundle
+childBundles=
+
+#37 web离线包
+webPackages=
+
+#38 原生壳子工程
+shellproject=
+
+#39 离线资源位置
+offlinePath=
+
+#40 nodejs
+nodePath=
+
+#41 是否应用自定义插件
+usePlugin=false
+
+#42 自定义插件配置文件
+pluginConf=
+
+#43 其他配置
+otherConf=
+
+#44 iOS欢迎页
+splash=
+
+#45 p12文件
+p12=
+
+#46 mobileprovision文件
+provision=
+
+#47 是否支持消息推送(需要证书支持)
+push=false
+
+#48 打包方法
+method=enterprise
+
+#49 立即体验按钮图片
+guidePageBt=
+
+#50 引导页图片
+guidePageImg=
+
+#51 隐私权限和提示信息配置
+privacy=
+
+#52 操作系统当前用户密码
+userPass=
+
+#此行勿删

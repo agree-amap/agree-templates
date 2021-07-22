@@ -16,6 +16,21 @@ const handler = {
   },
   '/src/pages/index/index.config.js' ({ pageName }) {
     return { setPageName: `/src/pages/${pageName}/index.config.js` }
+  },
+  '/build/configHolder.js'({}) {
+    return { changeExt: false }
+  },
+  '/build/inteBundle.js'({}) {
+    return { changeExt: false }
+  },
+  '/build/pack.js'({}) {
+    return { changeExt: false }
+  },
+  '/build/zipresource.js'({}) {
+    return { changeExt: false }
+  },
+  '/build.js'({}) {
+    return { changeExt: false }
   }
 }
 

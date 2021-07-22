@@ -16,7 +16,14 @@
     "build:rn-android":"amap build --type rn --platform android",
     "dev:weapp": "npm run build:weapp -- --watch",
     "dev:h5": "npm run build:h5 -- --watch",
-    "dev:rn": "npm run build:rn -- --watch"
+    "dev:rn": "npm run build:rn -- --watch",
+    "trim:android": "node build bundle android",
+    "trim:ios": "node build bundle ios",
+    "pack": "node build pack",
+    "inte:android": "npm-run-all build:rn-android trim:android",
+    "pack:android": "npm-run-all build:rn-android pack", 
+    "inte:ios": "npm-run-all build:rn-ios trim:ios",
+    "pack:ios": "npm-run-all build:rn-ios pack"
   },
   "browserslist": [
     "last 3 versions",
@@ -59,6 +66,9 @@
     "eslint-plugin-react": "^7.8.2",
     "eslint-plugin-import": "^2.12.0",
     "eslint-plugin-react-hooks": "^4.2.0",<%}%>
+    "amap-build-utils": "^1.0.0",
+    "jszip": "^3.6.0",
+    "npm-run-all": "^4.1.5",
     "stylelint": "9.3.0"<% if (typescript) {%>,
     "@typescript-eslint/parser": "^4.15.1",
     "@typescript-eslint/eslint-plugin": "^4.15.1",
