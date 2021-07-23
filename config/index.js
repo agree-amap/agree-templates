@@ -47,7 +47,7 @@ const config = {
     }
   },
   h5: {
-    publicPath: "/AMAPDemo/",
+    publicPath: process.env.NODE_ENV==="development"?"/":"./",
     staticDirectory: "static",
     esnextModules: ['taro-ui'],
     postcss: {
@@ -70,13 +70,15 @@ const config = {
   rn: {
     appName:'RNProject',
     output: {
-      ios: 'ios/index.ios.jsbundle',
-      iosAssetsDest: 'ios',
-      android: 'android/index.android.bundle',
-      androidAssetsDest: 'android',
-      iosSourcemapOutput:'ios/index.ios.jsbundle.map',
-      androidSourcemapOutput:'android/index.android.bundle.map',
-    },
+      ios: './ios/index.ios.jsbundle',
+      iosAssetsDest: './ios',
+      iosSourceMapUrl:'./ios/index.ios.jsbundle.map',
+      iosSourcemapOutput:'./ios/index.ios.jsbundle.map',
+      android: './android/index.android.bundle',
+      androidAssetsDest: './android',
+      androidSourceMapUrl:'./android/index.android.bundle.map',
+      androidSourcemapOutput:'./android/index.android.bundle.map'
+    }
   }
 };
 
